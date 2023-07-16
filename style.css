@@ -1,18 +1,100 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: 'Passion One', cursive; /* fonte do titulo */
+    --fonte2: 'Sriracha', cursive; /* fonte do texto */
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
 header {
     background-color: black;
     text-align: center;
     color: white; 
 }
 
-body {
+header > h1 {
+    font-family: var(--fonte1);
+    font-size: 10vw;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    padding-top: 40px;
     margin: 0px;
-
 }
 
-#titulo_header {
-    font-size: 10vw;
-    margin: 0px;
+header > p {
+    padding-bottom: 40px;
+}
 
+header > p > a {
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+}
+
+div p {
+    font-family: var(--fonte2);
+    font-size: 3vw;
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.customizada {
+    color: white;
+    box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.593);
+}
+
+.customizada#c1 {
+    background-image: url(util/imagens/background001.jpg);
+    background-attachment: fixed;
+}
+
+.customizada#c2 {
+    background-image: url(util/imagens/background002.jpg);
+    background-attachment: fixed;
+}
+
+.customizada > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.669);
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.1em;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
