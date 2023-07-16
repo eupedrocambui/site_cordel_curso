@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white; 
+}
+
+body {
+    margin: 0px;
+
+}
+
+#titulo_header {
+    font-size: 10vw;
+    margin: 0px;
+
+}
