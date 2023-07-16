@@ -49,10 +49,15 @@ body {
 
 div p {
     font-family: var(--fonte2);
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding-left: 40px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.padrao {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .customizada {
@@ -62,12 +67,16 @@ div p {
 
 .customizada#c1 {
     background-image: url(util/imagens/background001.jpg);
+    background-position: center center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .customizada#c2 {
     background-image: url(util/imagens/background002.jpg);
+    background-position: right center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .customizada > p {
